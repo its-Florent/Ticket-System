@@ -6,7 +6,7 @@ Danke das du meine Tutorials schaust.
 Den Code darfst du für deinen Privaten Bot benutzen!
 Ich nehme keine Verantwortung für diesen Code.
 
-Und zu gutler letzt wüde ich mich freuen wenn ihr Werbung für unseren Discord Server macht(keine Pflicht)
+Und zu guter letzt wüde ich mich freuen wenn ihr Werbung für unseren Discord Server macht (keine Pflicht)
 http://discord.gzgaming.eu/
 
 Das musst du machen:
