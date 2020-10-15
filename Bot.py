@@ -52,7 +52,7 @@ async def on_raw_reaction_add(payload):
                 return
 
         category = bot.get_channel(CATEGORY_ID)
-        ticket_channel = await guild.create_text_channel(f"ticket-{user.id}", category=category,
+        ticket_channel = await guild.create_text_channel(f"-ticket-{user.id}", category=category,
                                                          topic=f"Ticket-System made by its_florent")
         await ticket_channel.set_permissions(guild.get_role(guild.id), send_messages=False,
                                              read_messages=False)
@@ -78,9 +78,10 @@ async def on_raw_reaction_add(payload):
          await user.send(embed=embed)
         except:
             pass
+        return
     if payload:
         channel = bot.get_channel(payload.channel_id)
-        if 'ticket' in channel.name:
+        if '-ticket-' in channel.name:
              user = bot.get_user(payload.user_id)
              embed = discord.Embed(
                 description=f'Das Ticket wurde geschlossen und in 5s gelöscht!',
