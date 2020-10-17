@@ -81,7 +81,7 @@ async def on_raw_reaction_add(payload):
         return
     if payload:
         channel = bot.get_channel(payload.channel_id)
-        if '-ticket-' in channel.name:
+        if 'ticket-' in channel.name:
              user = bot.get_user(payload.user_id)
              embed = discord.Embed(
                 description=f'Das Ticket wurde geschlossen und in 5s gelöscht!',
